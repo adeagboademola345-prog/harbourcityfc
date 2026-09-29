@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbour City FC — One City. One Club.</title>
+  <meta name="description" content="Harbour City FC — professional football club. News, fixtures, results, squad, league table, tickets and official club shop.">
+  <meta name="theme-color" content="#0A2A6B">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 92 31v38L50 96 8 69V31z' fill='%230A2A6B'/%3E%3Ccircle cx='50' cy='50' r='18' fill='%23FFD400'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="crest" aria-hidden="true"></span>
+        <span>Harbour <b>City</b> FC</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+        <a href="#news">News</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#squad">Squad</a>
+        <a href="#table">Table</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact" class="btn-ticket">Buy Tickets</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LIVE MATCH BANNER -->
+  <div class="match-banner">
+    <div class="match-inner">
+      <span class="live-tag"><i aria-hidden="true"></i>Next Fixture</span>
+      <div class="match-teams">
+        <b class="home">Harbour City FC</b><span class="vs">VS</span><b class="away">Bluefront Athletic</b>
+      </div>
+      <div class="countdown" id="countdown" aria-label="Countdown to kickoff">
+        <div><b id="cDays">–</b><span>Days</span></div>
+        <div><b id="cHours">–</b><span>Hrs</span></div>
+        <div><b id="cMins">–</b><span>Min</span></div>
+        <div><b id="cSecs">–</b><span>Sec</span></div>
+      </div>
+      <span class="match-venue" id="matchDate">Home • Harbour Arena</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=2000&q=80" alt="">
+      </div>
+      <div class="hero-copy">
+        <p class="hero-kicker">Harbour City FC</p>
+        <h1>One City.<br>One <span>Club.</span></h1>
+        <p class="hero-sub">Proud of the port. Fierce on the pitch.<br>Est. 1971 — chasing silverware again.</p>
+        <div class="hero-btns">
+          <a href="#fixtures" class="btn btn-yellow">Fixtures</a>
+          <a href="#tickets" class="btn btn-ghost">Get Tickets</a>
+        </div>
+      </div>
+      <div class="hero-stats" aria-hidden="true">
+        <div><b>1971</b><span>Founded</span></div>
+        <div><b>7</b><span>League titles</span></div>
+        <div><b>2nd</b><span>Current</span></div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news section" id="news">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Latest News</span>
+          <h2>From the Harbour</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-feature reveal">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1100&q=80" alt="Team celebration" loading="lazy">
+            <div class="news-body">
+              <span class="chip chip-yellow">Match Report</span>
+              <h3>Bakare's brace sinks Portside Rovers 3–1</h3>
+              <p>Two second-half goals from D. Bakare sealed three points in front of a roaring home crowd.</p>
+              <span class="news-meta">14 Aug 2026 • Matchday 4</span>
+            </div>
+          </article>
+          <article class="news-feature reveal" style="--d:.1s">
+            <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=1100&q=80" alt="Player in action" loading="lazy">
+            <div class="news-body">
+              <span class="chip chip-blue">Transfer</span>
+              <h3>Uche signs new three-year deal</h3>
+              <p>Midfield engine N. Uche commits his future to the club — "This is home."</p>
+              <span class="news-meta">11 Aug 2026 • Club</span>
+            </div>
+          </article>
+          <article class="news-feature reveal" style="--d:.2s">
+            <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1100&q=80" alt="Training session" loading="lazy">
+            <div class="news-body">
+              <span class="chip chip-navy">Club</span>
+              <h3>Academy star promoted to first team</h3>
+              <p>18-year-old winger M. Tunde graduates from the youth set-up ahead of the derby.</p>
+              <span class="news-meta">9 Aug 2026 • Academy</span>
+            </div>
+          </article>
+        </div>
+        <div class="news-list reveal">
+          <a href="#news">Six things we learned from the Rovers win <i>→</i></a>
+          <a href="#news">Ticket update: derby allocation sells out <i>→</i></a>
+          <a href="#news">Coach Pre-match press conference — full quotes <i>→</i></a>
+          <a href="#news">Ladies' team march on in the Cup <i>→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXTURES & RESULTS -->
+    <section class="fixtures section-cut" id="fixtures">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Fixtures &amp; Results</span>
+          <h2>Matchday Central</h2>
+        </div>
+        <div class="fx-tabs reveal" id="fxTabs">
+          <button class="fx-btn active" data-fx="up">Upcoming</button>
+          <button class="fx-btn" data-fx="re">Results</button>
+        </div>
+        <div class="fx-list reveal" id="fxList"></div>
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="table-sec section" id="table">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">League Table</span>
+          <h2>Coastal Premier League</h2>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="league-table" aria-label="League standings">
+            <thead><tr><th>#</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Northbank United</td><td>9</td><td>7</td><td>1</td><td>1</td><td>+12</td><td>22</td></tr>
+              <tr class="hl"><td>2</td><td>Harbour City FC</td><td>9</td><td>6</td><td>2</td><td>1</td><td>+10</td><td>20</td></tr>
+              <tr><td>3</td><td>Bluefront Athletic</td><td>9</td><td>6</td><td>1</td><td>2</td><td>+8</td><td>19</td></tr>
+              <tr><td>4</td><td>Lagos Rovers</td><td>9</td><td>5</td><td>2</td><td>2</td><td>+5</td><td>17</td></tr>
+              <tr><td>5</td><td>Delta Forge</td><td>9</td><td>4</td><td>3</td><td>2</td><td>+3</td><td>15</td></tr>
+              <tr><td>6</td><td>Bayview Wanderers</td><td>9</td><td>3</td><td>2</td><td>4</td><td>−2</td><td>11</td></tr>
+              <tr><td>7</td><td>Portside Rovers</td><td>9</td><td>2</td><td>3</td><td>4</td><td>−4</td><td>9</td></tr>
+              <tr><td>8</td><td>Eastgate Kestrels</td><td>9</td><td>2</td><td>1</td><td>6</td><td>−9</td><td>7</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SQUAD -->
+    <section class="squad section-cut" id="squad">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">First Team</span>
+          <h2>The Squad</h2>
+        </div>
+        <div class="squad-filter reveal" id="squadFilter">
+          <button class="sf-btn active" data-pos="All">All</button>
+          <button class="sf-btn" data-pos="GK">Goalkeepers</button>
+          <button class="sf-btn" data-pos="DEF">Defenders</button>
+          <button class="sf-btn" data-pos="MID">Midfielders</button>
+          <button class="sf-btn" data-pos="FWD">Forwards</button>
+        </div>
+        <div class="squad-grid" id="squadGrid"></div>
+      </div>
+    </section>
+
+    <!-- SPOTLIGHT -->
+    <section class="spotlight" id="spotlight">
+      <div class="container spotlight-grid">
+        <div class="spot-media reveal">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1100&q=80" alt="Featured player" loading="lazy">
+          <span class="spot-no" aria-hidden="true">10</span>
+        </div>
+        <div class="spot-text reveal">
+          <span class="kicker" style="color:#FFD400">Player Spotlight</span>
+          <h2>Adaeze "Ace" Calabar</h2>
+          <p class="spot-role">Attacking Midfielder • Captain</p>
+          <p class="spot-bio">Signed from the academy at 16, "Ace" has gone on to captain the side to two cup finals. This season he leads the league in chances created and is the heartbeat of every Harbour attack.</p>
+          <div class="spot-stats">
+            <div><b>157</b><span>Appearances</span></div>
+            <div><b>34</b><span>Goals</span></div>
+            <div><b>48</b><span>Assists</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+    <section class="tickets section" id="tickets">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Tickets</span>
+          <h2>Be There. Be Loud.</h2>
+        </div>
+        <div class="tick-grid">
+          <article class="tick reveal">
+            <span class="tick-tag">North Stand</span>
+            <b class="tick-price">₦2,500</b>
+            <p>General seating • Family zone</p>
+            <button class="btn btn-yellow btn-block" data-ticket="North Stand (₦2,500)">Buy Tickets</button>
+          </article>
+          <article class="tick tick-pop reveal" style="--d:.1s">
+            <span class="pop">Most Popular</span>
+            <span class="tick-tag">Main Stand</span>
+            <b class="tick-price">₦5,000</b>
+            <p>Best view • Under cover</p>
+            <button class="btn btn-yellow btn-block" data-ticket="Main Stand (₦5,000)">Buy Tickets</button>
+          </article>
+          <article class="tick reveal" style="--d:.2s">
+            <span class="tick-tag">VIP Box</span>
+            <b class="tick-price">₦25,000</b>
+            <p>Hospitality • Food &amp; drink</p>
+            <button class="btn btn-yellow btn-block" data-ticket="VIP Box (₦25,000)">Buy Tickets</button>
+          </article>
+          <article class="tick reveal" style="--d:.3s">
+            <span class="tick-tag">Season Pass</span>
+            <b class="tick-price">₦45,000</b>
+            <p>All home league games</p>
+            <button class="btn btn-yellow btn-block" data-ticket="Season Pass (₦45,000)">Buy Tickets</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Official Shop</span>
+          <h2>Wear the City</h2>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-card reveal">
+            <div class="shop-ph"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=80" alt="Home jersey" loading="lazy"></div>
+            <div class="shop-info"><span class="chip chip-blue">Home Kit</span><h3>Player Home Jersey</h3><b>₦28,000</b><button class="btn btn-outline btn-block" data-product="Player Home Jersey (₦28,000)">Pre-order</button></div>
+          </article>
+          <article class="shop-card reveal" style="--d:.08s">
+            <div class="shop-ph"><img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=80" alt="Match ball" loading="lazy"></div>
+            <div class="shop-info"><span class="chip chip-blue">Equipment</span><h3>Official Match Ball</h3><b>₦18,500</b><button class="btn btn-outline btn-block" data-product="Official Match Ball (₦18,500)">Pre-order</button></div>
+          </article>
+          <article class="shop-card reveal" style="--d:.16s">
+            <div class="shop-ph"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80" alt="Scarf" loading="lazy"></div>
+            <div class="shop-info"><span class="chip chip-blue">Fanwear</span><h3>Home Supporters' Scarf</h3><b>₦6,000</b><button class="btn btn-outline btn-block" data-product="Home Supporters' Scarf (₦6,000)">Pre-order</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORS MARQUEE -->
+    <div class="sponsors" aria-label="Partners">
+      <div class="sp-track">
+        <span>Harbour Energy</span><i>◆</i><span>Dune Bank</span><i>◆</i><span>BlueCitadel</span><i>◆</i><span>PortSide Brew</span><i>◆</i><span>NovaFit</span><i>◆</i>
+        <span>Harbour Energy</span><i>◆</i><span>Dune Bank</span><i>◆</i><span>BlueCitadel</span><i>◆</i><span>PortSide Brew</span><i>◆</i><span>NovaFit</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="container foot-grid">
+        <div class="foot-brand">
+          <span class="logo">Harbour <b>City</b> FC</span>
+          <p>Official website of Harbour City Football Club. Est. 1971. Harbour Arena, Lagos.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1m0-2.2C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4 .6c-.9.3-1.6.8-2.4 1.5C.9 2.9.4 3.7.1 4.5-.1 5.3-.3 6.2-.3 7.5-.3 8.8-.3 9.2-.3 12s0 3.2.1 4.5c.1 1.3.3 2.2.6 3 .3.9.8 1.6 1.5 2.4.7.7 1.5 1.2 2.4 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.9.1s3.6 0 4.9-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.4-1.5.7-.7 1.2-1.5 1.5-2.4.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.9s0-3.2-.1-4.5c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.4C20.6.9 19.8.4 19 .1c-.8-.3-1.7-.5-3-.6C15.2.1 14.8 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.4a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/></svg></a>
+            <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2h3.3l-7.2 8.3L22.8 22h-6.6l-5.2-6.8L5 22H1.7l7.7-8.9L1.2 2h6.8l4.7 6.2L18.2 2zm-1.2 18h1.8L7.1 3.9H5.1L17 20z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.7a5.5 5.5 0 01-3.3-2.6c-.3-.5-.5-1-.6-1.6h-3.1v12.2a3 3 0 11-2-2.8V8.7a6.5 6.5 0 105.5 6.4V8.5a8.7 8.7 0 004.5 1.3V6.6c-.3 0-.6 0-1 .1z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <h5>Club</h5>
+          <a href="#news">News</a>
+          <a href="#fixtures">Fixtures</a>
+          <a href="#squad">Squad</a>
+          <a href="#table">Table</a>
+        </div>
+        <div class="foot-col">
+          <h5>Fans</h5>
+          <a href="#tickets">Tickets</a>
+          <a href="#shop">Shop</a>
+          <a href="#tickets">Season tickets</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="foot-col foot-contact">
+          <h5>Contact</h5>
+          <a href="tel:09027911490">0902 791 1490</a>
+          <a href="mailto:adeagboademola345@gmail.com">adeagboademola345@gmail.com</a>
+          <span>Harbour Arena, Lagos, Nigeria</span>
+        </div>
+      </div>
+      <div class="container foot-bottom">
+        <p>© <span id="year"></span> Harbour City FC. One City. One Club.</p>
+        <p class="foot-note">Unofficial concept page — placeholder imagery from Unsplash.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
